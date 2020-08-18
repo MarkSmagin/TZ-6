@@ -1,0 +1,111 @@
+/** Не посещалась*/
+a:link {
+    color: blue;
+    text-decoration: none;
+  }
+
+/** Посещена */
+  a:visited {
+    color: purple;
+  }
+
+/** Наведение */
+  a:hover {
+    color: aqua;
+    text-decoration: underline;
+  }
+
+/** Активна */
+  a:active {
+    color: red;
+  }
+
+a:visited:hover {
+    color: orange;
+}
+a:visited:active {
+    color: red;
+}
+
+.button:link,                 
+.button:visited {             
+  display: block;            
+  text-decoration: none;      
+
+  color: aqua;                
+  background-color: rebeccapurple;
+  font-weight: 900;
+  padding: 30px;
+  text-align: center;
+  border: 5px solid purple;
+  border-radius: 15px;
+
+  width: 300px;
+  margin: 10px auto;
+}
+
+.button:hover,
+.button:visited:hover {
+  color: aqua;
+  background-color: plum;
+  display: block;
+  text-decoration: none; 
+}
+
+.button:active,
+.button:visited:active {
+  color: aqua;
+  background-color: purple;  
+  display: block;             
+  text-decoration: none; 
+}
+
+
+/* first of type */
+.articles p:first-of-type {
+  color:blue;
+}
+
+/*last-of-type*/
+.articles p:last-of-type {
+    color:red;
+}
+
+/* first-child */
+.articles .description:first-child
+{
+  font-size: 40px;
+}
+
+/* last-child */
+.articles .description:last-child {
+    color: green;
+}
+
+/* nth-child() */
+.articles p:nth-child(2)
+{
+  text-decoration: line-through;
+}
+
+/* not() */
+.articles .description:not(p)
+{
+  font-style: italic;
+}
+
+/* Псевдоэлементы */
+/* first-line */
+.article::first-line {
+    text-transform: uppercase;
+}
+
+/* before */
+.article::before {
+  content: "→";
+}
+
+/* after */
+.article::after {
+  content: "♥";
+}

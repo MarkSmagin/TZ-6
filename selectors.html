@@ -18,7 +18,7 @@
 
     <!-- Селектор класс -->
     <div>
-        <p class="description description2">
+        <p class="description description_color">
             Этот текст стилизован с использованием селектора class
         </p>
         <blockquote class="description">
@@ -28,10 +28,10 @@
 
     <!-- Несколько классов на элементе -->
     <div>
-        <p class="emphasized-description description description2">
+        <p class="emphasized-description description description_color">
             Этот текст стилизован с использованием селектора типа класс
         </p>
-        <p class="description emphasized-description description2">
+        <p class="description emphasized-description description_color">
             На странице может быть несколько классов с одним и тем же классом
         </p>
     </div>
@@ -51,10 +51,10 @@
 
     <!-- Смешивание классов и id -->
     <div>
-        <p id="idea" class="description description2">
+        <p id="idea" class="description description_color">
             Смешивание ID и class возможно
         </p>
-        <p id="mistake" class="description description2">
+        <p id="mistake" class="description description_color">
             При пересечении стилей id и класса, id будет иметь более высокий приоритет ( вне зависимости от порядка
             объвления в css) - этот текст красный, а не синий как для description
         </p>
@@ -120,19 +120,19 @@
 
     <!-- Сестринский селектор -->
     <div>
-        <p class="description description2">
+        <p class="description description_color">
             Этот текст стилизован с использованием селектора типа класс
         </p>
 
         <!-- @see 52 of css-->
         <h3>А перед этим текстом есть заголовок</h3>
-        <p class="description description2">
+        <p class="description description_color">
             На странице может быть несколько классов с одним и тем же классом
         </p>
 
         <h3>А перед этим текстом тоже есть заголовок</h3>
         <div>
-            <p class="description description2">
+            <p class="description description_color">
                 Этот текст будет как обычный class=description
             </p>
         </div>
@@ -140,25 +140,25 @@
 
     <!-- Сестринский селектор -->
     <div>
-        <p class="description description2">
+        <p class="description description_color">
             Этот текст стилизован с использованием селектора типа класс
         </p>
 
         <!-- @see 52 of css-->
-        <p class="description description2">
+        <p class="description description_color">
                 Сестринский, но h3 + .description не сработает, потому что сверху
         </p>
         <h3>А перед этим текстом есть заголовок</h3>
-        <p class="description description2">
+        <p class="description description_color">
             Сестринский h3 + .description
         </p>
-        <p class="description description2">
+        <p class="description description_color">
             этот текст будет как обычный class=description, потому что он не сестринский для h3
         </p>
 
         <h3>А перед этим текстом тоже есть заголовок</h3>
         <div>
-            <p class="description description2">
+            <p class="description description_color">
                 Этот текст будет как обычный class=description
             </p>
         </div>
@@ -167,15 +167,13 @@
     <!-- Общий селектор смежных элементов ~-->
     <div>
         <h2>А перед этим текстом есть заголовок</h2>
-        <p class="description description2">
+        <p class="description description_color">
             Мы все оранжевые
         </p>
-        <p class="description description2">
+        <p class="description description_color">
             Мы все оранжевые
         </p>
     </div>
-
-    <!-- Группирующий селектор @see 73 main.css -->
 
     <!-- Селекторы атрибутов -->
     <div>

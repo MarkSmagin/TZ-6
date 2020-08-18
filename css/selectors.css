@@ -31,8 +31,8 @@ h3 {
     color: red;
 }
 
-/** Исправленная ошибка в строке 35 путем добавления нового класса description2*/
-.description .description2{
+/** Исправленная ошибка в строке 35 путем добавления модификатора description_color*/
+.description_color{
     color: cyan;
 } 
 

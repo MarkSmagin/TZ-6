@@ -18,7 +18,7 @@
 
     <!-- Селектор класс -->
     <div>
-        <p class="description">
+        <p class="description description2">
             Этот текст стилизован с использованием селектора class
         </p>
         <blockquote class="description">
@@ -28,10 +28,10 @@
 
     <!-- Несколько классов на элементе -->
     <div>
-        <p class="emphasized-description description">
+        <p class="emphasized-description description description2">
             Этот текст стилизован с использованием селектора типа класс
         </p>
-        <p class="description emphasized-description">
+        <p class="description emphasized-description description2">
             На странице может быть несколько классов с одним и тем же классом
         </p>
     </div>
@@ -51,10 +51,10 @@
 
     <!-- Смешивание классов и id -->
     <div>
-        <p id="idea" class="description">
+        <p id="idea" class="description description2">
             Смешивание ID и class возможно
         </p>
-        <p id="mistake" class="description">
+        <p id="mistake" class="description description2">
             При пересечении стилей id и класса, id будет иметь более высокий приоритет ( вне зависимости от порядка
             объвления в css) - этот текст красный, а не синий как для description
         </p>
@@ -71,30 +71,9 @@
         </p>
     </div>
 
-    <!-- Разделяйте слова в называниях классов с помощью тире-->
-    
-    <!-- Не называйте опираясь на презентационные свойства элемента-->
-    <!-- 
-        <style>
-            /** вот так не рекомендуется  - но часто встречается */
-            .red {
-                background: red;
-            }
-        </style>
-        <p class="red"></p>
-    -->
-
-    <!-- Найдите ошибку в строке 35-->
-    <!-- @see https://google.github.io/styleguide/htmlcssguide.html#CSS_Style_Rules-->
-
-
-    <!-- Пример стилевых модификаторов, в данном случае error-->
-    <!-- @see 23 in main.css-->
     <input type="text" class="form-input" />
     <input type="text" class="form-input error" />
 
-    <!-- Универсальный селектор -->
-    <!-- @see and uncomment 34 in main.css -->
 
     <!-- Селектор потомков-->
     <ul class="menu">
@@ -141,19 +120,19 @@
 
     <!-- Сестринский селектор -->
     <div>
-        <p class="description">
+        <p class="description description2">
             Этот текст стилизован с использованием селектора типа класс
         </p>
 
         <!-- @see 52 of css-->
         <h3>А перед этим текстом есть заголовок</h3>
-        <p class="description">
+        <p class="description description2">
             На странице может быть несколько классов с одним и тем же классом
         </p>
 
         <h3>А перед этим текстом тоже есть заголовок</h3>
         <div>
-            <p class="description">
+            <p class="description description2">
                 Этот текст будет как обычный class=description
             </p>
         </div>
@@ -161,25 +140,25 @@
 
     <!-- Сестринский селектор -->
     <div>
-        <p class="description">
+        <p class="description description2">
             Этот текст стилизован с использованием селектора типа класс
         </p>
 
         <!-- @see 52 of css-->
-        <p class="description">
+        <p class="description description2">
                 Сестринский, но h3 + .description не сработает, потому что сверху
         </p>
         <h3>А перед этим текстом есть заголовок</h3>
-        <p class="description">
+        <p class="description description2">
             Сестринский h3 + .description
         </p>
-        <p class="description">
+        <p class="description description2">
             этот текст будет как обычный class=description, потому что он не сестринский для h3
         </p>
 
         <h3>А перед этим текстом тоже есть заголовок</h3>
         <div>
-            <p class="description">
+            <p class="description description2">
                 Этот текст будет как обычный class=description
             </p>
         </div>
@@ -188,10 +167,10 @@
     <!-- Общий селектор смежных элементов ~-->
     <div>
         <h2>А перед этим текстом есть заголовок</h2>
-        <p class="description">
+        <p class="description description2">
             Мы все оранжевые
         </p>
-        <p class="description">
+        <p class="description description2">
             Мы все оранжевые
         </p>
     </div>
